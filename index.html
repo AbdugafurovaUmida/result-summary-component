@@ -6,22 +6,69 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   
-  <title>Frontend Mentor | Results summary component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <title>Results summary component | Frontend Mentor</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<main>
+    <div class="container">
+      <div class="card-wrapper">
+        <div class="left-content card">
+          <h1 class="card__your-result">Your Result</h1>
+          <div class="card__score-container">
+            <h2 class="accumulated-score">76</h2>
+            <span class="total-score">of 100</span>
+          </div>
+          <h3 class="card__feedback">Great</h3>
+          <p class="card__feedback-description">You scored higher than 65% of the people who have taken these tests.</p>
+        </div>
+        <div class="right-content">
+          <h4 class="card-title">Summary</h4>
+            <div class="card-item">
+              <div class="card-head-holder">
+                <img src="./assets/images/icon-reaction.svg" alt="">
+                <h5 class="card-item-name"> Reaction</h5>
+              </div>
+              <span class="card-item-score"><span class="score">80</span> / 100</span>
+            </div>
 
-  Your Result
-  76
-  of 100
+              <div class="card-item">
+                <div class="card-head-holder">
+                  <img src="./assets/images/icon-memory.svg" alt="">
+                  <h5 class="card-item-name"> Memory</h5>
+                </div>
+                <span class="card-item-score"><span class="score">92</span> / 100</span>
+              </div>
+              
+              <div class="card-item">
+                <div class="card-head-holder">
+                  <img src="./assets/images/icon-verbal.svg" alt="">
+                  <h5 class="card-item-name"> Verbal</h5>
+                </div>
+                <span class="card-item-score"><span class="score">61</span> / 100</span>
+              </div>
 
-  Great
-  You scored higher than 65% of the people who have taken these tests.
+              <div class="card-item">
+                <div class="card-head-holder">
+                  <img src="./assets/images/icon-visual.svg" alt="">
+                  <h5 class="card-item-name"> Visual</h5>
+                </div>
+                <span class="card-item-score"><span class="score">72</span> / 100</span>
+              </div>
+              
+              <button class="card-button" type="button">Continue</button>
+
+        </div>
+    
+      </div>
+    </div>
+</main>
+
+
+
+
+
+  <!--
   
   Summary
 
@@ -37,7 +84,7 @@
   Visual
   72 / 100
 
-  Continue
+  Continue -->
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
