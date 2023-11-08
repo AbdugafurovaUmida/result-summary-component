@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
 
+:root {
+   font-size: 10px;
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -9,6 +13,7 @@
 body{
     background-color:  #FFF;
     font-family: 'Hanken Grotesk';
+    font-size: 1.8rem;
 }
 
 .container{
@@ -53,7 +58,7 @@ body{
 
 .accumulated-score{
     color: #FFF;
-    font-size: 72px;
+    font-size: 7.2rem;
     font-weight: 800;
     line-height: 72px;
     margin-bottom: 4px;
@@ -61,7 +66,6 @@ body{
 
 .total-score{
     color: hsl(241, 100%, 89%);
-    font-size: 18px;
     font-weight: 700;
     opacity: 0.5168;
 }
@@ -74,7 +78,6 @@ body{
 }
 
 .card__feedback-description{
-    font-size: 18px;
     font-weight: 500;
     color: hsla(241, 100%, 89%, 1);
     max-width: 260px;
@@ -88,7 +91,7 @@ body{
 
 .card-title{
     color: hsla(223, 30%, 27%, 1);
-    font-size: 24px;
+    font-size: 2.4rem;
     font-weight: 700;
     margin-bottom: 28px;
 }
@@ -131,12 +134,10 @@ body{
 
 .card-item-name{
     margin-left: 12px;
-    font-size: 18px;
     font-weight: 500;
 }
 
 .card-item-score {
-    font-size: 18px;
     font-weight: 700;
     color: hsla(223, 30%, 27%, 0.5);
 }
@@ -153,7 +154,6 @@ body{
   width: 100%;
   padding: 17px 107px 16px 106px;
   font-weight: 700;
-  font-size: 18px;
   text-decoration: none;
   margin-top: 41px;
   display: inline-block;
@@ -166,4 +166,79 @@ body{
   background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
   cursor: pointer;
 
+}
+
+.attribution{
+    margin-top: 20px;
+}
+
+@media(max-width: 768px){
+    .container{
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    .card-wrapper{
+        flex-direction: column;
+    }
+
+    .left-content{
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        padding: 24px 57px 40px 58px;
+    }
+
+    .card__your-result {
+        font-size: 18px;
+    }
+
+    .card__score-container{
+        width: 140px;
+        height: 140px;
+        margin: 24px auto;
+    }
+    
+    .accumulated-score{   
+        font-size: 5.6rem;
+        margin-bottom: 0;
+    }
+
+    .total-score{
+        font-size: 1.6rem;
+    }
+
+    .card__feedback{
+        font-size: 2.4rem;
+        margin-bottom: 8px;
+    }
+
+    .card__feedback-description {
+        font-size: 1.6rem;
+    }
+
+    .right-content {
+        padding: 24px 30px 30px;
+    }
+
+    .card-title{
+        font-size: 1.8rem;
+        margin-bottom: 24px;
+    }
+
+    .card-item{
+        padding: 17px 16px 18px;
+    }
+
+    .card-item-name{
+        font-size: 1.5rem;
+    }
+
+    .card-item-score{
+        font-size: 16px;
+    }
+
+    .card-button{
+        margin-top: 24px;
+        font-size: 1.8rem;
+    }
 }
